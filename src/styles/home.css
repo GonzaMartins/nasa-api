@@ -1,0 +1,130 @@
+hr {
+    /* visibility: hidden; */
+    margin: 0px 20%;
+    width: 2px;
+    border: 0;
+    height:100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.animation_left {
+  animation: animation_left  2s 1 ;
+}
+
+.buttonHome{
+  width: 15%;
+  box-shadow: 0px 0px 63px -7px rgba(30,66,140,1);
+}
+
+.divHelp{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+  
+  @keyframes animation_left {
+   
+    0% {
+      opacity: 0;
+      transform: translateX(-100vw);
+    }
+  }
+  
+  .animation_right{
+   
+    animation: animation_right  2s 1 ;
+  }
+  
+  @keyframes animation_right {
+   
+    0% {
+      opacity: 0;
+      transform: translateX(100vw);
+    }
+  }
+  
+
+  .animation_top{
+   
+    animation: animation_top  4s 1 ;
+  }
+  
+  @keyframes animation_top {
+   
+    0% {
+      opacity: 0;
+      transform: translateY(100vw);
+    }
+  }
+  
+  .apodContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apodDataContainer {
+    background-color: #00000099;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 50%;
+    box-shadow: 0px 0px 63px 7px rgba(30,66,140,1);
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .apodDataContainer::-webkit-scrollbar {
+    background: rgb(15, 1, 42);
+    border-radius: 10px;
+    width: 10px;
+}
+
+.apodDataContainer::-webkit-scrollbar-thumb:hover {
+  background: #070318;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+  .textAlignCenter {
+    text-align: center;
+  }
+
+  .hrApod {
+    margin: 0px 3% !important;
+  }
+
+  .apodDataText {
+    color: rgb(243, 236, 225);
+  }
+
+  .apodImageContainer {
+    text-align: center;
+  }
+  .apodImage {
+    padding: 30px;
+    max-width: 40%;
+  }
+
+  .apodTextContainer {
+    padding: 10px 30px 20px 30px;
+  }
+
+  .description {
+    margin-top: 3%;
+  }
+
+  .buttonBack {
+    margin: 30px 0px 0px 30px;
+  }
+
+  .copyright {
+    margin-top: 2%;
+  }
